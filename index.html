@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzarendelés Form</title>
+</head>
+<body>
+    <h1>Pácsa pizzéria</h1>
+    <form>
+        <label> Név:
+            <input type="text" name="name" placeholder="Pl.: Füty Imre" maxlength="50">
+        </label>
+        <br>
+        <label> Telefonszám:
+            <input type="tel" name="phone" placeholder="Pl.: +36301234567" maxlength="12" required>
+        </label>
+        <br>
+        <label> E-mail:
+            <input type="email" name="E-mail" placeholder="Pl.: @kalap.kabat@email.com" maxlength="12" required>
+        </label>
+        <br>
+
+        <fieldset>
+            <legend> Pizza mérete </legend>
+            <label>
+                <input type="radio" name="size" required> Családi
+            </label>
+            <label>
+                <input type="radio" name="size" required> Közepes
+            </label>
+            <label>
+                <input type="radio" name="size" required> Kicsi
+            </label>
+        </fieldset>
+    </form>
+</body>
+</html>
