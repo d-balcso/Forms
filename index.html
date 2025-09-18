@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzarendelés Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1>Pácsa pizzéria</h1>
-    <form>
+    <form method="post" action=""https//httpbin.org/post">
         <label> Név:
             <input type="text" name="name" placeholder="Pl.: Füty Imre" maxlength="50">
         </label>
@@ -33,6 +34,29 @@
                 <input type="radio" name="size" required> Kicsi
             </label>
         </fieldset>
+
+        <fieldset>
+            <legend> Feltétek </legend>
+            <label>
+                <input type="checkbox" name="size"> Mozzarella sajt
+            </label>
+            <label>
+                <input type="checkbox" name="size"> Fetasajt
+            </label>
+            <label>
+                <input type="checkbox" name="size"> Kukorica
+            </label>
+            <label>
+                <input type="checkbox" name="size"> Bacon
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend> Megjegyzés </legend>
+            <textarea name="megjegyzes" id="megjegyzes_mezo" maxlength="200" placeholder="Ide írhatod a megjegyzésed" cols="100" rows="5"></textarea>
+        </fieldset>
+
+        <button type="submit">Elküldés</button>
     </form>
 </body>
 </html>
